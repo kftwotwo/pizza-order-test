@@ -9,6 +9,12 @@ body {
   background-size: 1300px;
   color: gainsboro;
 }
+#blue {
+  color: firebrick;
+}
+#color{
+  color: firebrick;
+}
 strong {
   font-size: 1.4em;
 }

@@ -40,7 +40,7 @@ $(document).ready(function() {
     $("#selectedCheese").append(newPizza.cheese);
     $("#selectedMeat").append(newPizza.meat);
     $("#selectedveggie").append(newPizza.veggie);
-    $("#selectedPrice").append(newPizza.price);
+    $("#selectedPrice").append(newPizza.price.toFixed(2));
 
     $("#inputForm").hide();
     $("#recipt").show();
