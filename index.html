@@ -1,30 +1,94 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/bootstrap.css" media="all">
-    <link rel="stylesheet" href="css/styles.css" media="all">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
     <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
-    <title>Pizza Order</title>
+    <title>Kev's Pizza Co.</title>
   </head>
   <body>
     <div class="container">
-      <form class="inputForm">
-        <div class="dropdown">
-        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-          Dropdown
-          <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-          <li><a href="#">Action</a></li>
-          <li><a href="#">Another action</a></li>
-          <li><a href="#">Something else here</a></li>
-          <li role="separator" class="divider"></li>
-          <li><a href="#">Separated link</a></li>
-        </ul>
-      </div>
-      </form>
+      <div class="jumbotron">
+      <h1>Kev's Pizza Co.</h1>
     </div>
+    <div class="row">
+      <form id="inputForm">
+        <div class="col-md-2">
+          <div class="form-group">
+            <label>Select your size</label>
+            <select class="form-control" id="size">
+              <option id="pSmall">Small-10"</option>
+              <option id="pMed">Medium-15"</option>
+              <option id="plarge">Large-18"</option>
+              <option id="pxlarge">X-Large-20"</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="form-group">
+            <label>Select your type of crust</label>
+            <select class="form-control" id="crust">
+              <option id="normal">Normal</option>
+              <option id="thin">Thin</option>
+              <option id="stuffed">Stuffed Chesse </option>
+              <option id="pretzel">Pretzel</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="form-group">
+            <label>Select your second toping</label>
+            <select class="form-control" id="top">
+              <option id="cheese">artichoke</option>
+              <option id="peper">anchovy</option>
+              <option id="bacon">garlic</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="form-group">
+            <label>Select your third toping</label>
+            <select class="form-control" id="top1">
+              <option id="cheese">red onoins</option>
+              <option id="peper">bell peppers</option>
+              <option id="pine">Pineapple</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="form-group">
+            <label>Select your toping</label>
+            <select class="form-control" id="top2">
+              <option id="cheese">cheese</option>
+              <option id="peper">peperioni</option>
+              <option id="bacon">bacon</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="form-group">
+           <label>Select your age group</label>
+           <select class="form-control" id="age">
+             <option id="youth">Youth</option>
+             <option id="adult">Adult</option>
+             <option id="senior">Senior</option>
+           </select>
+         </div>
+       </div>
+       <button type="submit" class="btn btn-primary">Confirm Order</button>
+    </form>
+    <div class="col-md-5" id="result">
+      <h2><span id="selectedSize">Size:  </span></h2>
+      <h2><span id="selectedCrust">Crust:  </span></h2>
+      <h2><span id="selectedtop">Topping 1:  </span></h2>
+      <h2><span id="selectedtop1">Topping 2:  </span></h2>
+      <h2><span id="selectedtop2">Topping 3:  </span></h2>
+      <h2><span id= "selectedAge">Age Group:  </span></h2>
+      <h2><span id="selectedPrice">Total: $</span></h2>
+      <input type="button" value="Back" class="btn btn-primary"onClick="window.location.reload()"><!--refresh page -->
+    </div>
+  </div><!--row-->
+  </div> <!--Container-->
   </body>
 </html>
