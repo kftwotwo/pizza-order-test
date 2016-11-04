@@ -18,10 +18,10 @@
             <div class="form-group">
               <label>Select your size</label>
               <select class="form-control" id="size">
-                <option id="pSmall">Small-10"</option>
-                <option id="pMed">Medium-15"</option>
-                <option id="plarge">Large-18"</option>
-                <option id="pxlarge">X-Large-20"</option>
+                <option>Small-10</option>
+                <option>Medium-15</option>
+                <option id="large">Large-18</option>
+                <option id="pxlarge">X-Large-20</option>
               </select>
             </div>
           </div>
@@ -29,51 +29,78 @@
             <div class="form-group">
               <label>Select your type of crust</label>
               <select class="form-control" id="crust">
-                <option id="normal">Normal</option>
-                <option id="thin">Thin</option>
-                <option id="stuffed">Stuffed Chesse </option>
-                <option id="pretzel">Pretzel</option>
+                <option>None</option>
+                <option>Normal</option>
+                <option>Thin</option>
+                <option>Stuffed Chesse </option>
+                <option>Pretzel</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-md-2">
+            <div class="form-group">
+              <label>Select your Sauce</label>
+              <select class="form-control" id="sauce">
+                <option>None</option>
+                <option>Tomato Paste</option>
+                <option>Garlic Basil Ailoli</option>
+                <option>Spicy Tomato</option>
+                <option>Somked White Cheedar Alfredo</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-md-2">
+            <div class="form-group">
+              <label>Select your Chesse</label>
+              <select class="form-control" id="cheese">
+                <option>None</option>
+                <option>American</option>
+                <option>Swiss</option>
+                <option>Cheddar</option>
+                <option>Smoked Cheddar</option>
+                <option>Provolone</option>
               </select>
             </div>
           </div>
           <div class="col-md-2">
             <div class="form-group">
-              <label>Select your 2nd toping</label>
-              <select class="form-control" id="top">
-                <option id="cheese">artichoke</option>
-                <option id="peper">anchovy</option>
-                <option id="bacon">garlic</option>
+              <label>Select your meat</label>
+              <select class="form-control" id="meat">
+                <option>None</option>
+                <option>Ground Beef</option>
+                <option>Smoked Apple Wood Bacon</option>
+                <option>Sausage</option>
+                <option>Peperoni</option>
+                <option>Candian Bacon</option>
               </select>
             </div>
           </div>
+
           <div class="col-md-2">
             <div class="form-group">
-              <label>Select your 3rd toping</label>
-              <select class="form-control" id="top1">
-                <option id="cheese">red onoins</option>
-                <option id="peper">bell peppers</option>
-                <option id="pine">Pineapple</option>
+              <label>Select your Veggies</label>
+              <select class="form-control" id="veggie">\
+                <option>None</option>
+                <option>Lettece</option>
+                <option>Oinoin</option>
+                <option>Hummus</option>
+                <option>Bell Peppers</option>
               </select>
             </div>
           </div>
-          <div class="col-md-2">
-            <div class="form-group">
-              <label>Select your toping</label>
-              <select class="form-control" id="top2">
-                <option id="cheese">cheese</option>
-                <option id="peper">peperioni</option>
-                <option id="bacon">bacon</option>
-              </select>
-            </div>
-          </div>
+
+
           <button type="submit" class="btn btn-primary">Confirm Order</button>
         </form>
         <div class="col-md-5" id="recipt">
           <h2><span id="selectedSize">Size:  </span></h2>
           <h2><span id="selectedCrust">Crust:  </span></h2>
-          <h2><span id="selectedTop">Topping 1:  </span></h2>
-          <h2><span id="selectedTop1">Topping 2:  </span></h2>
-          <h2><span id="selectedTop2">Topping 3:  </span></h2>
+          <h2><span id="selectedSauce">Sauce:  </span></h2>
+          <h2><span id="selectedCheese">Cheese:  </span></h2>
+          <h2><span id="selectedMeat">Meat:  </span></h2>
+          <h2><span id="selectedveggie">Veggies:  </span></h2>
           <h2><span id="selectedPrice">Total: $</span></h2>
           <input type="button" value="Back" class="btn btn-primary"onClick="window.location.reload()"><!--refresh page to go back -->
         </div>

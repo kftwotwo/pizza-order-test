@@ -1,11 +1,12 @@
-var bigSize = ["Large", "X-Large"];
+var bigSize = ["Large-18", "X-Large-20"];
 var crust = ["Stuffed cheese", "Pretzel"];
-function Pizza(pSize, crust, topping, top1, top2, price) {
+function Pizza(pSize, crust, sauce, cheese, meat, veggie, price) {
   this.pSize = pSize;
   this.crust = crust;
-  this.topping = topping;
-  this.top1 = top1;
-  this.top2 =top2;
+  this.sauce = sauce;
+  this.cheese = cheese;
+  this.meat = meat;
+  this.veggie =veggie;
   this.price = 20;
 }
 Pizza.prototype.addToPrice = function () {
@@ -21,18 +22,20 @@ $(document).ready(function() {
     event.preventDefault();
     var pSize = $("#size").val();
     var crust = $("#crust").val();
-    var top = $("#top").val();
-    var top1 = $("#top1").val();
-    var top2 = $("#top2").val();
+    var sauce = $("#sauce").val();
+    var cheese = $("#cheese").val();
+    var meat = $("#meat").val();
+    var veggie = $("#veggie").val();
     var price = 20;
-    var newPizza = new Pizza(pSize, crust, top, top1, top2, price);
+    var newPizza = new Pizza(pSize, crust, sauce, cheese, meat, veggie, price);
     newPizza.addToPrice();
 
     $("#selectedSize").append(newPizza.pSize);
     $("#selectedCrust").append(newPizza.crust);
-    $("#selectedTop").append(newPizza.topping);
-    $("#selectedTop1").append(newPizza.top1);
-    $("#selectedTop2").append(newPizza.top2);
+    $("#selectedSauce").append(newPizza.sauce);
+    $("#selectedCheese").append(newPizza.cheese);
+    $("#selectedMeat").append(newPizza.meat);
+    $("#selectedveggie").append(newPizza.veggie);
     $("#selectedPrice").append(newPizza.price);
 
     $("#inputForm").hide();
