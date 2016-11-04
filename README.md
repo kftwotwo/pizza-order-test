@@ -18,6 +18,12 @@ $ cd pizza-order-test
 $ atom . (your choice if text editor)
 ```
 
+## Specs.
+When you fill out the pizza order it will hide and the receipt will show
+```
+input: Small, Thin, Tomato Paste, Ground Beef, Bell Peppers
+output: Size: Small, Crust: Thin, Sauce: Tomato Paste, Meat: Ground Beef, Veggies: Bell Peppers
+```
 ## Known Bugs
 
 _If you do notice and bugs or an idea for this page you can go here `https://github.com/kftwotwo/pizza-order-test/issues` and fill out a new issue._
