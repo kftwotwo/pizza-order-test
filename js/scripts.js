@@ -1,5 +1,6 @@
 var bigSize = ["Large-18", "X-Large-20"];
 var crust = ["Stuffed cheese", "Pretzel"];
+var sauce = ["Somked White Cheedar Alfredo","Garlic Basil Aiello"]
 function Pizza(pSize, crust, sauce, cheese, meat, veggie, price) {
   this.pSize = pSize;
   this.crust = crust;
@@ -7,11 +8,14 @@ function Pizza(pSize, crust, sauce, cheese, meat, veggie, price) {
   this.cheese = cheese;
   this.meat = meat;
   this.veggie =veggie;
-  this.price = 20;
+  this.price = 21.78;
 }
 Pizza.prototype.addToPrice = function () {
   if(bigSize.includes(this.pSize)) {
     this.price += 6;
+  }
+  if(sauce.includes(this.sauce)) {
+    this.price += 2.55;
   }
   if(crust.includes(this.crust)) {
     this.price += 2;
@@ -26,7 +30,7 @@ $(document).ready(function() {
     var cheese = $("#cheese").val();
     var meat = $("#meat").val();
     var veggie = $("#veggie").val();
-    var price = 20;
+    price = 20;
     var newPizza = new Pizza(pSize, crust, sauce, cheese, meat, veggie, price);
     newPizza.addToPrice();
 

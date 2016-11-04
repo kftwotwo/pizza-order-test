@@ -5,12 +5,13 @@
     <link rel="stylesheet" href="css/styles.css">
     <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
     <title>Kev's Pizza Co.</title>
   </head>
   <body>
     <div class="container">
       <div class="jumbotron">
-        <h1>Kev's Pizza Co.</h1>
+        <h1><strong>Kev's</strong> Pizza Co.</h1>
       </div>
       <div class="row">
         <form id="inputForm">
@@ -27,7 +28,7 @@
           </div>
           <div class="col-md-2">
             <div class="form-group">
-              <label>Select your type of crust</label>
+              <label>Select your crust</label>
               <select class="form-control" id="crust">
                 <option>None</option>
                 <option>Normal</option>
@@ -44,13 +45,12 @@
               <select class="form-control" id="sauce">
                 <option>None</option>
                 <option>Tomato Paste</option>
-                <option>Garlic Basil Ailoli</option>
+                <option>Garlic Basil Aiello</option>
                 <option>Spicy Tomato</option>
                 <option>Somked White Cheedar Alfredo</option>
               </select>
             </div>
           </div>
-
           <div class="col-md-2">
             <div class="form-group">
               <label>Select your Chesse</label>
@@ -77,7 +77,6 @@
               </select>
             </div>
           </div>
-
           <div class="col-md-2">
             <div class="form-group">
               <label>Select your Veggies</label>
@@ -90,18 +89,16 @@
               </select>
             </div>
           </div>
-
-
-          <button type="submit" class="btn btn-primary">Confirm Order</button>
+          <button type="submit" class="btn btn-primary">Order!</button>
         </form>
         <div class="col-md-5" id="recipt">
-          <h2><span id="selectedSize">Size:  </span></h2>
-          <h2><span id="selectedCrust">Crust:  </span></h2>
-          <h2><span id="selectedSauce">Sauce:  </span></h2>
-          <h2><span id="selectedCheese">Cheese:  </span></h2>
-          <h2><span id="selectedMeat">Meat:  </span></h2>
-          <h2><span id="selectedveggie">Veggies:  </span></h2>
-          <h2><span id="selectedPrice">Total: $</span></h2>
+          <h2>Size: <span id="selectedSize"></span></h2>
+          <h2>Crust: <span id="selectedCrust"></span></h2>
+          <h2>Sauce: <span id="selectedSauce"></span></h2>
+          <h2>Cheese: <span id="selectedCheese"></span></h2>
+          <h2>Meat: <span id="selectedMeat"></span></h2>
+          <h2>Veggies: <span id="selectedveggie"></span></h2>
+          <h2>Total: $ <span id="selectedPrice"></span></h2>
           <input type="button" value="Back" class="btn btn-primary"onClick="window.location.reload()"><!--refresh page to go back -->
         </div>
       </div><!--row-->
