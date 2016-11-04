@@ -1,4 +1,5 @@
 var bigSize = ["Large-18", "X-Large-20"];
+var normal = ["Small", "Medium"]
 var crust = ["Stuffed cheese", "Pretzel"];
 var sauce = ["Somked White Cheedar Alfredo","Garlic Basil Aiello"]
 function Pizza(pSize, crust, sauce, cheese, meat, veggie, price) {
@@ -8,17 +9,20 @@ function Pizza(pSize, crust, sauce, cheese, meat, veggie, price) {
   this.cheese = cheese;
   this.meat = meat;
   this.veggie =veggie;
-  this.price = 21.78;
+  this.price = 0;
 }
 Pizza.prototype.addToPrice = function () {
   if(bigSize.includes(this.pSize)) {
-    this.price += 6;
+    this.price += 25.39;
+  }
+  if(normal.includes(this.pSize)) {
+    this.price += 20.54;
   }
   if(sauce.includes(this.sauce)) {
     this.price += 2.55;
   }
   if(crust.includes(this.crust)) {
-    this.price += 2;
+    this.price += 2.01;
   }
 };
 $(document).ready(function() {
@@ -30,7 +34,7 @@ $(document).ready(function() {
     var cheese = $("#cheese").val();
     var meat = $("#meat").val();
     var veggie = $("#veggie").val();
-    price = 20;
+    price = 0;
     var newPizza = new Pizza(pSize, crust, sauce, cheese, meat, veggie, price);
     newPizza.addToPrice();
 
@@ -41,9 +45,7 @@ $(document).ready(function() {
     $("#selectedMeat").append(newPizza.meat);
     $("#selectedveggie").append(newPizza.veggie);
     $("#selectedPrice").append(newPizza.price.toFixed(2));
-
     $("#inputForm").hide();
     $("#recipt").show();
-
   });
 });
