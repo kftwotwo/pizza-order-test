@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
     <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="js/pizza.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
     <title>Kev's Pizza Co.</title>
@@ -18,12 +19,7 @@
           <div class="col-md-2">
             <div class="form-group">
               <label>Select your size</label>
-              <select class="form-control" id="size">
-                <option>None</option>
-                <option>Small</option>
-                <option>Medium</option>
-                <option id="large">Large-18</option>
-                <option id="pxlarge">X-Large-20</option>
+              <select class="form-control"id="size">
               </select>
             </div>
           </div>
@@ -31,11 +27,6 @@
             <div class="form-group">
               <label>Select your crust</label>
               <select class="form-control" id="crust">
-                <option>None</option>
-                <option>Normal</option>
-                <option>Thin</option>
-                <option>Stuffed Chesse </option>
-                <option>Pretzel</option>
               </select>
             </div>
           </div>
@@ -43,50 +34,29 @@
             <div class="form-group">
               <label>Select your Sauce</label>
               <select class="form-control" id="sauce">
-                <option>None</option>
-                <option>Tomato Paste</option>
-                <option>Garlic Basil Aiello</option>
-                <option>Spicy Tomato</option>
-                <option>Somked White Cheedar Alfredo</option>
               </select>
             </div>
           </div>
+
           <div class="col-md-2">
             <div class="form-group">
               <label>Select your Chesse</label>
               <select class="form-control" id="cheese">
-                <option>None</option>
-                <option>American</option>
-                <option>Swiss</option>
-                <option>Cheddar</option>
-                <option>Smoked Cheddar</option>
-                <option>Provolone</option>
               </select>
             </div>
           </div>
           <div class="col-md-2">
             <div class="form-group">
               <label>Select your meat</label>
-              <select class="form-control" id="meat">
-                <option>None</option>
-                <option>Ground Beef</option>
-                <option>Smoked Apple Wood Bacon</option>
-                <option>Sausage</option>
-                <option>Peperoni</option>
-                <option>Candian Bacon</option>
-              </select>
+              <div id="meat">
+              </div>
             </div>
           </div>
           <div class="col-md-2">
             <div class="form-group">
               <label>Select your Veggies</label>
-              <select class="form-control" id="veggie">\
-                <option>None</option>
-                <option>Lettece</option>
-                <option>Oinoin</option>
-                <option>Hummus</option>
-                <option>Bell Peppers</option>
-              </select>
+              <div id="veggie">
+              </div>
             </div>
           </div>
           <center><button type="submit" class="btn btn-primary">Order!</button></center>
