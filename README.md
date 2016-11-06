@@ -51,6 +51,6 @@ Bootstrap
 ```
 ### License
 
-*This is user a MIT license*
+*MIT license*
 
 Copyright (c) 2016 **_Kevin Finley_**
