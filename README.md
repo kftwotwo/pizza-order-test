@@ -1,22 +1,22 @@
 # _Kev's pizza co._
 
-#### _You can order pizza, 11-04-16_
+#### You can order pizza, 11-04-16
 
-#### By _**Kevin Finley**_
+#### By [Kevin Finley](http://www.kfinley.com)
 
 ## Description
 
-_You can order pizza on this web application (not really) but it will function properly_
+You can order pizza on this web application (not really) but it will function properly
 
 ## Setup/Installation Requirements
 
-_Go to github and clone the repository `https://github.com/kftwotwo/pizza-order-test.git`.  Once the repository is cloned open terminal_
-
+Install _Kev's Pizza Co._ by first cloning the repository.
 ```
 $ git clone https://github.com/kftwotwo/pizza-order-test.git
 $ cd pizza-order-test
-$ atom . (your choice if text editor)
 ```
+## Running the application
+Open `index.html` in your favorite browser.
 
 ## Specs.
 When you fill out the pizza order it will hide and the receipt will show
@@ -32,18 +32,22 @@ If you discover any bugs, feel free to create an issue on GitHub. Please add as 
 
 ## Support and Contact Details
 
-_You can reach me at `kf.two.two@gmail.com`. Feel free to use and experiment with this file in a text editor._
+You can reach me at [kf.two.two@gmail.com](mailto:kf.two.two@gmial.com). Feel free to use and experiment with this file in a text editor.
 
 ## Contribute
 
-_Issue Tracker: https://github.com/kftwotwo/pizza-order-test/issues_
+Issue Tracker: https://github.com/kftwotwo/pizza-order-test/issues
 
-_Source Code: https://github.com/kftwotwo/pizza-order-test.git_
+Source Code: https://github.com/kftwotwo/pizza-order-test.git
 
 
 ## Technologies Used
 ```
-HTML, CSS, Javascript, JQuery-3.1.1, Bootstrap
+HTML
+CSS
+Javascript
+JQuery-3.1.1
+Bootstrap
 ```
 ### License
 
