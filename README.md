@@ -24,11 +24,13 @@ When you fill out the pizza order it will hide and the receipt will show
 input: Small, Thin, Tomato Paste, Ground Beef, Bell Peppers
 output: Size: Small, Crust: Thin, Sauce: Tomato Paste, Meat: Ground Beef, Veggies: Bell Peppers
 ```
-## Known Bugs
+## Bug Reports
 
-_If you do notice and bugs or an idea for this page you can go here `https://github.com/kftwotwo/pizza-order-test/issues` and fill out a new issue._
+If you discover any bugs, feel free to create an issue on GitHub. Please add as much information as possible to help me fixing the possible bug. I also encourage you to help even more by forking and sending me a pull request.
 
-## Support and contact details
+[Submit Bug Report Here](https://github.com/kftwotwo/pizza-order-test/issues)
+
+## Support and Contact Details
 
 _You can reach me at `kf.two.two@gmail.com`. Feel free to use and experiment with this file in a text editor._
 
